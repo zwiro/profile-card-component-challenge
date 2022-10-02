@@ -13,7 +13,6 @@ body {
     font-size: 18px;
     background-color: var(--main-bg);
     background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
-    /* background-position: -60% 200%, 150% -150%; */
     background-position: left -300px top -515px, right -200px bottom -650px;
     background-repeat: no-repeat, no-repeat;
     display: flex;
