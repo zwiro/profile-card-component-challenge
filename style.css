@@ -1,0 +1,110 @@
+:root {
+    --main-bg: hsl(185, 75%, 39%);
+    --primary-text-clr: hsl(229, 23%, 23%);
+    --secondary-text-clr: hsl(227, 10%, 46%);
+    --dark-gray: hsl(0, 0%, 59%);
+
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 18px;
+    background-color: var(--main-bg);
+    background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+    /* background-position: -60% 200%, 150% -150%; */
+    background-position: left -300px top -515px, right -200px bottom -650px;
+    background-repeat: no-repeat, no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    background-image: url(images/bg-pattern-card.svg);
+    background-repeat: repeat-x;
+    width: 22rem;
+    border-radius: 1rem;
+    box-shadow: 0px 8px 24px 0px rgba(66, 68, 90, 1);
+    margin-bottom: 1rem;
+}
+
+img {
+    margin-top: 5.5rem;
+    border-radius: 50%;
+    border: 5px solid white;
+    transition: box-shadow 300ms ease-in-out, border 300ms ease-in-out, transform 300ms ease-in-out;
+}
+
+.user {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+h1,
+.user p {
+    padding: 1rem 0.25rem 0 0.25rem;
+}
+
+h1 {
+    font-weight: 700;
+}
+
+.secondary-txt {
+    color: var(--secondary-text-clr);
+}
+
+.city {
+    font-size: 0.85rem;
+    padding-top: 0.5rem;
+    padding-bottom: 1.5rem;
+    max-height: 3rem;
+    width: 100%;
+    border-bottom: 1px solid hsl(0, 0%, 90%);
+}
+
+.stats {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    padding: 1.75rem 0;
+}
+
+.stats p {
+    font-weight: 700;
+}
+
+.stats .secondary-txt {
+    font-weight: 400;
+    font-size: 0.6rem;
+    letter-spacing: 1px;
+}
+
+img:hover {
+    transform: scale(1.25);
+    border: 5px solid var(--primary-text-clr);
+    box-shadow: 0px 15px 24px 0px rgba(66, 68, 90, 1);
+    cursor: pointer;
+}
+
+@media (max-width: 350px) {
+    main {
+        width: 100%;
+    }
+}
+
+@media (max-width:450px) {
+    body {
+        background-position: left -766px top -633px, right -743px bottom -595px;
+    }
+}
